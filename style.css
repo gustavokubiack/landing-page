@@ -1,0 +1,52 @@
+body {
+    padding-top: 56px;
+}
+
+header {
+    height: 50vh;
+    min-height: 300px;
+    background: url('header-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.carousel-item img {
+    max-height: 300px; /* ou a altura máxima desejada */
+    width: auto; /* mantém a largura da imagem responsiva */
+    object-fit: cover; /* garante que a imagem cubra a área sem perder as proporções */
+    margin: auto; /* centraliza a imagem se ela for menor que o espaço disponível */
+}
+
+
+section {
+    padding: 60px 0;
+}
+
+section#sobre {
+    background-color: #f8f9fa;
+}
+
+section#agenda {
+    background-color: #e9ecef;
+}
+
+section#inscricao {
+    background-color: #fff;
+}
+
+
+footer {
+    background: #343a40;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #ffffff;
+    margin: 0 15px;
+    font-size: 24px; /* Ajuste o tamanho dos ícones conforme necessário */
+}
+
+footer a:hover {
+    color: #ddd;
+    text-decoration: none;
+}
