@@ -4,20 +4,28 @@ document.addEventListener("DOMContentLoaded", function() {
     navbarItems.forEach(item => {
         item.addEventListener('click', function(e) {
             e.preventDefault();
-
-            var section = document.querySelector(item.getAttribute('href'));
+            var sectionId = item.getAttribute('href'); 
+            var section = document.querySelector(sectionId);
             var sectionPos = section.offsetTop;
 
+            var offset = 80;
             window.scroll({
-                top: sectionPos,
+                top: sectionPos - offset, 
                 behavior: "smooth"
             });
         });
     });
 });
 
+
 document.getElementById('btn-enviar').addEventListener('click', function(e) {
-    e.preventDefault()
+    e.preventDefault();
+    
+    var btnEnviar = document.getElementById('btn-enviar');
+    btnEnviar.disabled = true;
+    
+    btnEnviar.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Enviando...';
+
     var nome = document.getElementById('nome').value;
     var email = document.getElementById('email').value;
 
@@ -35,14 +43,18 @@ document.getElementById('btn-enviar').addEventListener('click', function(e) {
                 icon: 'success',
                 title: 'Sucesso!',
                 text: 'Seu e-mail foi enviado com sucesso.',
-
+                onClose: () => {
+                    location.reload();
+                }
+            }).then(() => {
+                document.getElementById('nome').value = '';
+                document.getElementById('email').value = '';
             });
         } else {
             Swal.fire({
                 icon: 'error',
                 title: 'Erro!',
                 text: 'Houve um erro ao enviar o e-mail. Por favor, tente novamente mais tarde.',
-
             });
         }
     })
@@ -53,5 +65,10 @@ document.getElementById('btn-enviar').addEventListener('click', function(e) {
             title: 'Erro!',
             text: 'Houve um erro ao enviar o e-mail. Por favor, tente novamente mais tarde.',
         });
+    })
+    .finally(() => {
+        btnEnviar.disabled = false;
+        btnEnviar.innerHTML = 'Enviar';
     });
 });
+

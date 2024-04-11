@@ -60,15 +60,14 @@ section#inscricao {
 
 
 footer {
-    background: #343a40;
-    color: #ffffff;
+    background-color: #051d40;
     padding: 10px 0;
 }
 
 footer a {
     color: #ffffff;
     margin: 0 15px;
-    font-size: 24px; /* Ajuste o tamanho dos ícones conforme necessário */
+    font-size: 24px;
 }
 
 footer a:hover {
