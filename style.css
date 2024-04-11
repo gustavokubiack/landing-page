@@ -2,11 +2,39 @@ body {
     padding-top: 56px;
 }
 
-header {
-    height: 50vh;
-    min-height: 300px;
-    background: url('header-bg.jpg') no-repeat center center;
-    background-size: cover;
+.teste {
+    margin-top: 100px;
+}
+.navbar{
+    background-color: #051d40;
+}
+
+.custom-link {
+    color: white
+}
+
+.custom-link:hover {
+    color: #6ee9f9; 
+    border-bottom: 2px solid #6ee9f9
+}
+
+
+.navbar-brand img {
+    width: 250px; 
+    height: auto; 
+}
+
+.btn-custom {
+    background-color: #051d40;
+    color: white;
+}
+.btn-custom:hover {
+    background-color: #051d40; 
+    color: white;
+}
+
+.bg-color{
+    background-color: #051d40;
 }
 
 .carousel-item img {
@@ -21,9 +49,6 @@ section {
     padding: 60px 0;
 }
 
-section#sobre {
-    background-color: #f8f9fa;
-}
 
 section#agenda {
     background-color: #e9ecef;

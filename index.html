@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evento de TI</title>
+    <title>InovaTech Summit</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">LogoEvento</a>
+            <a class="navbar-brand" href="#">
+                <img src="images/landingpage.png" alt="LogoEvento">
+            </a>
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,62 +25,110 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
+                        <a class="nav-link custom-link" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#agenda">Agenda</a>
+                        <a class="nav-link custom-link" href="#agenda">Agenda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#inscricao">Inscreva-se</a>
+                        <a class="nav-link custom-link" href="#inscricao">Inscreva-se</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="download.jpeg" alt="Primeiro Slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="download_2.jpeg" alt="Segundo Slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="download_3.png" alt="Terceiro Slide">
-                </div>
+    <div class="teste container">
+        <div class="row">
+            <div class="col-lg-6">
+                <header>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/img1.jpg" alt="Terceiro Slide">
+                            </div>
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/img2.jpg" alt="Primeiro Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="images/img3.jpg" alt="Segundo Slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+                </header>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
+            <div class="col-lg-6">
+                <section id="sobre" class="py-5">
+                    <div class="container">
+                        <div class="text-justify mx-auto">
+                            <h2>Sobre o Evento</h2>
+                            <p>O InovaTech Summit é uma experiência imersiva que mergulha profundamente nas tendências mais recentes e nas soluções mais inovadoras em tecnologia da informação. Ao longo de vários dias repletos de palestras, workshops, painéis de discussão e atividades interativas, os participantes terão a oportunidade de explorar uma ampla gama de tópicos, desde inteligência artificial e blockchain até segurança cibernética e computação em nuvem.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-    </header>
-
-    <section id="sobre" class="py-5">
-        <div class="container">
-            <h2>Sobre o Evento</h2>
-            <p>Descrição detalhada sobre o evento de TI.</p>
-        </div>
-    </section>
-
+    </div>
+    
     <section id="agenda" class="py-5 bg-light">
         <div class="container">
-            <h2>Agenda</h2>
-            <p>Informações sobre a agenda do evento.</p>
+            <div class="d-flex align-items-center">
+                <h2 class="mb-0 me-3">Agenda</h2>
+                <a class="btn">
+                    <i class="far fa-calendar"></i> 
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Dia 1 - 13/04/2024</h3>
+                    <h4>Manhã</h4>
+                    <ul>
+                        <li>9:00 - 10:00: Registro e Café de Boas-Vindas</li>
+                        <li>10:00 - 11:00: Palestra de Abertura</li>
+                        <li>11:15 - 12:15: Introdução à Inteligência Artificial</li>
+                        <li>12:30 - 13:30: Almoço</li>
+                    </ul>
+                    <h4>Tarde</h4>
+                    <ul>
+                        <li>13:30 - 14:30: Painel de Discussão: O Futuro da Tecnologia</li>
+                        <li>14:45 - 15:45: Workshop de Desenvolvimento Web</li>
+                        <li>16:00 - 17:00: Palestra: Segurança Cibernética na Era Digital</li>
+                        <li>17:15 - 18:15: Mesa Redonda: Desafios da Transformação Digital nas Empresas</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 mt-5">
+                    <h3>Dia 2 - 14/04/2024</h3>
+                    <h4>Manhã</h4>
+                    <ul>
+                        <li>9:00 - 10:00: Registro e Café de Boas-Vindas</li>
+                        <li>10:00 - 11:00: Palestra: Inovação e Empreendedorismo</li>
+                        <li>11:15 - 12:15: Workshop: Introdução ao Machine Learning</li>
+                        <li>12:30 - 13:30: Almoço</li>
+                    </ul>
+                    <h4>Tarde</h4>
+                    <ul>
+                        <li>13:30 - 14:30: Palestra: Blockchain e Criptomoedas</li>
+                        <li>14:45 - 15:45: Mesa Redonda: Impacto da Tecnologia na Sociedade</li>
+                        <li>16:00 - 17:00: Encerramento e Networking</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
-
+        
     <section id="inscricao" class="py-5">
         <div class="container">
             <h2>Inscreva-se</h2>
@@ -91,37 +141,34 @@
                     <label for="email">E-mail:</label>
                     <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-custom" id="btn-enviar">Enviar</button>
             </form>
         </div>
     </section>
 
-    <footer class="text-center text-lg-start bg-light text-muted">
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <div class="me-5 d-none d-lg-block">
-                <span>Conecte-se conosco nas mídias sociais:</span>
-            </div>
+    <footer class="text-center text-lg-start text-muted">
+        <section class="d-flex justify-content-center  p-4 border-bottom bg-color">
             <div>
-                <a href="" class="me-4 text-reset">
+                <a href="" class="me-4 text-white">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="" class="me-4 text-reset">
+                <a href="" class="me-4 text-white">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="" class="me-4 text-reset">
+                <a href="" class="me-4 text-white">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="" class="me-4 text-reset">
+                <a href="" class="me-4 text-white">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-github"></i>
+                <a href="" class="me-4 text-white">
+                    <i class="far fa-envelope"></i> 
                 </a>
             </div>
         </section>
     </footer>
     
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
